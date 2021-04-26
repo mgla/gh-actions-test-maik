@@ -1,0 +1,14 @@
+---
+on:
+  pull_request:
+    branches: master
+name: test
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        uses: mscountermarsh/ascii-art-action@master
+        with:
+          text: '${{ secrets.VERY_SECRET }}'
