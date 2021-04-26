@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test
-        uses: mscountermarsh/ascii-art-action@master
+        uses: mscoutermarsh/ascii-art-action@master
         with:
           text: '${{ secrets.VERY_SECRET }}'
